@@ -10,7 +10,7 @@
     <h1>자바스크립트</h1>
 
     <p>
-      <strong>Javascript</strong>Lorem ipsum dolor sit amet, consectetur
+      <strong>Javascript</strong> Lorem ipsum dolor sit amet, consectetur
       adipisicing elit. Debitis ipsam quis est iusto ab nisi non, suscipit
       voluptate dolore molestias officiis, dolor aperiam provident! Labore qui,
       excepturi rerum ad quam maxime nostrum similique. Numquam sit eius esse ad
@@ -23,6 +23,77 @@
       veniam natus sit perferendis itaque modi.
     </p>
 
-    <input type="button" value="공부하기" />
+    <script src="remind.js"></script>
+
+    <input type="button" value="공부하기" onclick="clickButton()" />
+
+    <input
+      type="button"
+      value="night"
+      onclick="document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('p').style.borderColor='white';"
+    />
+
+    <input
+      type="button"
+      value="day"
+      onclick="document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('p').style.borderColor='black';"
+    />
+    <h2>숫자형</h2>
+    <script>
+      let number1 = 3;
+      let number2 = 7;
+      document.write(number1 + number2);
+      document.write("<br />");
+      document.write(number1 - number2);
+      document.write("<br />");
+      document.write(number1 * number2);
+      document.write("<br />");
+      document.write(number1 / number2);
+      document.write("<br />");
+      document.write(Math.PI);
+      document.write("<br />");
+      document.write(Math.abs(-3.14));
+      document.write("<br />");
+      document.write(Math.ceil(3.123));
+      document.write("<br />");
+      document.write(Math.pow(3, 3));
+      document.write("<br />");
+      document.write(Math.LN2);
+    </script>
+
+    <h2>문자열</h2>
+    <script>
+      document.write("Hello, World!");
+      document.write("<br />");
+      document.write("it's World!");
+      document.write("<br />");
+      document.write(`줄바꿈
+        웨 안돼? 아 이거 그냥 코딩할 때 줄바꿈 하라고 쓰는 겁니다.. 호호 보이는건 줄바꿈 안되는 듯. 코딩할때 그냥 엔터 \
+        쳐버리면 문자가 안끝났다고 에러난대요.`);
+      document.write("<br />");
+      document.write("Hello Elice~"[0]);
+    </script>
+
+    <h2>문자열 메소드</h2>
+    <script>
+      let strex = "슬라이싱생송";
+      document.write(strex.slice(3, 6));
+      document.write("<br />");
+      document.write("HELLO eLICE!".search("e"));
+    </script>
+
+    <h2>함수</h2>
+    <script>
+      function printText(text) {
+        document.write(text);
+        document.write("<br />");
+        return "OK";
+      }
+      document.write(printText("안녕"));
+    </script>
   </body>
 </html>

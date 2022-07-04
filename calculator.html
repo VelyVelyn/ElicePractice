@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>계산기</title>
+    <script src="calculator.js"></script>
+  </head>
+  <body>
+    <h2>계산기</h2>
+    <div>
+      <h4>숫자</h4>
+      <input type="button" value="1" onclick="printExpression(1)" />
+      <input type="button" value="2" onclick="printExpression(2)" />
+      <input type="button" value="3" onclick="printExpression(3)" />
+      <input type="button" value="4" onclick="printExpression(4)" />
+      <input type="button" value="5" onclick="printExpression(5)" />
+      <input type="button" value="6" onclick="printExpression(6)" />
+      <input type="button" value="7" onclick="printExpression(7)" />
+      <input type="button" value="8" onclick="printExpression(8)" />
+      <input type="button" value="9" onclick="printExpression(9)" />
+      <input type="button" value="0" onclick="printExpression(0)" />
+    </div>
+    <div>
+      <h4>연산</h4>
+      <input type="button" value="+" onclick="printExpression('+')" />
+      <input type="button" value="-" onclick="printExpression('-')" />
+      <input type="button" value="*" onclick="printExpression('*')" />
+      <input type="button" value="/" onclick="printExpression('/')" />
+      <input type="button" value="%" onclick="printExpression('%')" />
+    </div>
+    <h3>식</h3>
+    <div id="expression"></div>
+    <input type="button" value="계산하기" onclick="calculate()" />
+    <h2>정답</h2>
+    <div id="answer"></div>
+  </body>
+</html>
