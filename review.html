@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review</title>
+  </head>
+  <body>
+    <h2>자바스크립트</h2>
+    <p style="border: 1px solid black" id="secret">
+      <strong>JavaScript</strong> is
+      <span
+        style="
+          background-color: rgb(205, 204, 204);
+          padding: 0 5px;
+          cursor: pointer;
+        "
+        onclick="document.querySelector('#secret').innerHTML = '<strong>JavaScript</strong> is Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id veniam pariatur inventore ut doloribus quo quibusdam recusandae. Unde possimus quas tenetur cupiditate ab omnis, praesentium in, ea temporibus harum accusamus?'"
+        >...</span
+      >
+    </p>
+
+    <h2>파이썬</h2>
+    <p style="border: 1px solid black">
+      <strong>Python</strong> is
+      <span
+        style="
+          background-color: rgb(205, 204, 204);
+          padding: 0 5px;
+          cursor: pointer;
+        "
+        onclick="this.style.display='none'; document.querySelector('#pythonSecret').style.display='inline'"
+        >...</span
+      >
+      <span id="pythonSecret" style="display: none"
+        >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id veniam
+        pariatur inventore ut doloribus quo quibusdam recusandae. Unde possimus
+        quas tenetur cupiditate ab omnis, praesentium in, ea temporibus harum
+        accusamus?</span
+      >
+    </p>
+
+    <input
+      type="button"
+      value="night"
+      onclick="
+    if (this.value === 'night') {
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      this.value = 'day';
+      let pEle = document.querySelectorAll('p');
+      for (let i = 0; i < pEle.length; i++) {
+        pEle[i].style.borderColor = 'white';
+      }
+    }
+    else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      this.value = 'night';
+      let pEle = document.querySelectorAll('p');
+      for (let i = 0; i < pEle.length; i++) {
+        pEle[i].style.borderColor = 'black';
+      }
+    }
+     "
+    />
+
+    <!-- <input
+      type="button"
+      value="night"
+      onclick="document.querySelector('body').style.backgroundColor = 'black';
+   document.querySelector('body').style.color = 'white';
+   document.querySelector('p').style.borderColor = 'white';"
+    />
+    <input
+      type="button"
+      value="day"
+      onclick="document.querySelector('body').style.backgroundColor = 'white';
+ document.querySelector('body').style.color = 'black';
+ document.querySelector('p').style.borderColor = 'black';"
+    /> -->
+
+    <!-- <p> 자바스크립트 공부!
+      <script src="review.js"></script>
+    </p> -->
+  </body>
+</html>
